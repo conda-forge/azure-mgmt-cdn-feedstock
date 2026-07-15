@@ -2,15 +2,15 @@ schema_version: 1
 
 context:
   name: azure-mgmt-cdn
-  version: 13.1.1
+  version: "14.0.0"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure-mgmt-cdn-${{ version }}.tar.gz
-  sha256: 4663304f31b6672dec320c7ce7ba9715c2b99e7d8b684b375f0b4effda90210c
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: afc626507ced2c6beca912cb1a6233bf515af538121ecd21501aaa5dc82602f5
 
 build:
   number: 0
